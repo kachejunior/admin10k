@@ -1,0 +1,96 @@
+/* 
+    Document   : base
+    Created on : 24/05/2013, 04:18:13 PM
+    Author     : desarrollo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+html,
+body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -30px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+	height: 30px;
+}
+#footer {
+	/*background-color: #f5f5f5;*/
+/*	background-color: #d44413;
+	background-image: -moz-linear-gradient(top,#ce4213,#dd4814);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ce4213),to(#dd4814));
+	background-image: -webkit-linear-gradient(top,#ce4213,#dd4814);
+	background-image: -o-linear-gradient(top,#ce4213,#dd4814);
+	background-image: linear-gradient(to bottom,#ce4213,#dd4814);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce4213',endColorstr='#ffdd4814',GradientType=0);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+	color: white;*/
+	background-image: url('http://inscripcion10k.fsbolivar.com.ve/media/img/pdf/pie1.png');
+	text-align: center !important;
+	padding: 30px; 
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .row-fluid {
+	padding-top: 60px;
+}
+.container .credit {
+	margin: 5px 0;
+}
+
+code {
+	font-size: 80%;
+}
+
+
+thead th{
+	background-color: #d44413 !important;
+	background-image: -moz-linear-gradient(top,#ce4213,#dd4814);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ce4213),to(#dd4814));
+	background-image: -webkit-linear-gradient(top,#ce4213,#dd4814);
+	background-image: -o-linear-gradient(top,#ce4213,#dd4814);
+	background-image: linear-gradient(to bottom,#ce4213,#dd4814);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce4213',endColorstr='#ffdd4814',GradientType=0);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+	color: white;
+	text-align: center !important;
+}
+
+.centrado{
+	text-align: center !important;
+}
+
+.tags{
+	margin-left: 5px;
+	margin-top: -3px;
+}

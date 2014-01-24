@@ -1,0 +1,105 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.1.3
+-- Dumped by pg_dump version 9.1.3
+-- Started on 2013-11-06 10:27:44
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 174 (class 1259 OID 39750)
+-- Dependencies: 6
+-- Name: sedes; Type: TABLE; Schema: public; Owner: desarrollo; Tablespace: 
+--
+
+CREATE TABLE sedes (
+    id integer NOT NULL,
+    nombre character varying(100) NOT NULL
+);
+
+
+ALTER TABLE public.sedes OWNER TO desarrollo;
+
+--
+-- TOC entry 173 (class 1259 OID 39748)
+-- Dependencies: 174 6
+-- Name: sedes_id_seq; Type: SEQUENCE; Schema: public; Owner: desarrollo
+--
+
+CREATE SEQUENCE sedes_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.sedes_id_seq OWNER TO desarrollo;
+
+--
+-- TOC entry 1895 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: sedes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: desarrollo
+--
+
+ALTER SEQUENCE sedes_id_seq OWNED BY sedes.id;
+
+
+--
+-- TOC entry 1896 (class 0 OID 0)
+-- Dependencies: 173
+-- Name: sedes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: desarrollo
+--
+
+SELECT pg_catalog.setval('sedes_id_seq', 2, true);
+
+
+--
+-- TOC entry 1889 (class 2604 OID 39753)
+-- Dependencies: 174 173 174
+-- Name: id; Type: DEFAULT; Schema: public; Owner: desarrollo
+--
+
+ALTER TABLE ONLY sedes ALTER COLUMN id SET DEFAULT nextval('sedes_id_seq'::regclass);
+
+
+--
+-- TOC entry 1892 (class 0 OID 39750)
+-- Dependencies: 174
+-- Data for Name: sedes; Type: TABLE DATA; Schema: public; Owner: desarrollo
+--
+
+COPY sedes (id, nombre) FROM stdin;
+1	Caroni
+2	Heres
+\.
+
+
+--
+-- TOC entry 1891 (class 2606 OID 39755)
+-- Dependencies: 174 174
+-- Name: sedes_pk; Type: CONSTRAINT; Schema: public; Owner: desarrollo; Tablespace: 
+--
+
+ALTER TABLE ONLY sedes
+    ADD CONSTRAINT sedes_pk PRIMARY KEY (id);
+
+
+-- Completed on 2013-11-06 10:27:45
+
+--
+-- PostgreSQL database dump complete
+--
+

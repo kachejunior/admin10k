@@ -1,0 +1,197 @@
+root { 
+    display: block;
+}
+
+body{
+	font-family: sans-serif; 
+	font-size: 16px; 
+	color: #000;
+}
+
+.pie
+{
+	padding: 0px;
+    width: 100%;
+    clear: both;
+    font-size:10px;
+    font-family:sans-serif;
+    text-align:center;
+}
+
+.pie_i
+{
+    width: 20%;
+    float: left;
+}
+
+.pie_c
+{
+    width: 60%;
+    float: left;
+}
+
+.pie_d
+{
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+.datos_solicitud
+{
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px #655;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.datos_solicitud td
+{
+    border-collapse: collapse;
+    border: solid 1px #655;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 20px;
+}
+
+.datos_solicitud th
+{
+    border-collapse: collapse;
+    border: solid 1px #655;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+}
+
+.centrado
+{
+    text-align: center;
+}
+
+.normal
+{
+    padding-left: 3px;
+}
+
+.nro
+{
+    width: 15%;
+}
+
+.prioridad
+{
+    width: 15%;
+}
+
+.receptor
+{
+    width: 30%;
+}
+.recibido
+{
+    width: 25%;
+}
+
+.fecha
+{
+    width: 15%;
+}
+
+.sede
+{
+    width: 3%;
+}
+
+.datos_solicitante
+{
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px #655;
+}
+
+.datos_solicitante td
+{
+    border-collapse: collapse;
+    border: solid 1px #655;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding-left: 3px;
+    height: 20px;
+}
+
+.datos_solicitante th
+{
+    border-collapse: collapse;
+    border: solid 1px #655;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 3px;
+    height: 20px;
+}
+
+.cedula
+{
+    width: 20%;
+}
+
+.nombre
+{
+    width: 60%;
+}
+
+.titulo_tabla
+{
+    background: #c8c6c6;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+}
+
+
+.donativos_solicitados
+{
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px #655;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.donativos_solicitados td
+{
+    border-collapse: collapse;
+    border: solid 1px #655;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 20px;
+}
+
+.donativos_solicitados th
+{
+    border-collapse: collapse;
+    border: solid 1px #655;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 3px;
+    height: 20px;
+}
+
+.leyenda
+{
+    font-family: sans-serif;
+    font-size: 8px;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 30px;
+}
